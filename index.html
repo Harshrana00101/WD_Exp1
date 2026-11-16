@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1: GitHub & GitHub Pages Static Hosting</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-git text-danger fs-1 me-3"></i>
+                <div>
+                    <h1 class="h3 fw-bold mb-0">Experiment 1: GitHub & GitHub Pages</h1>
+                    <small class="text-white-50">Repository Setup &bull; Branching &bull; Merging &bull; Static Site Deployment</small>
+                </div>
+            </div>
+            <a href="https://github.com/Harshrana00101" target="_blank" class="btn btn-outline-light btn-sm mt-3 mt-md-0">
+                <i class="bi bi-github me-1"></i> @Harshrana00101
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <!-- Live Status Hero Banner -->
+        <div class="card border-0 shadow-sm p-4 mb-4 bg-white">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <span class="badge bg-success mb-2 px-3 py-2 rounded-pill">
+                        <i class="bi bi-check-circle-fill me-1"></i> Live Static Site Hosting Active
+                    </span>
+                    <h2 class="fw-bold">Git Version Control & Deployment Workflow</h2>
+                    <p class="text-secondary mb-0">
+                        This static page fulfills Experiment 1 by demonstrating a live hosted static project deployed via GitHub Pages, complete with branch lifecycle logs, merge history, and step-by-step CLI commands.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mt-3 mt-md-0">
+                    <div class="p-3 bg-light rounded border">
+                        <i class="bi bi-cloud-check text-success display-4 d-block mb-2"></i>
+                        <span class="fw-semibold">GitHub Pages Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Step-by-Step Workflow Tabs -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0 fw-bold"><i class="bi bi-terminal-split me-2 text-primary"></i>Sequential Git Execution Log</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- Step 1 -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary"><i class="bi bi-1-circle me-2"></i>1. Repository Initialization & Identity</h6>
+                            <p class="text-muted small mb-2">Initialize an empty Git repository with <code>main</code> as the primary trunk branch and configure user details.</p>
+                            <pre class="bg-dark text-light p-3 rounded"><code>git init -b main
+git config user.name "Harsh Kumar"
+git config user.email "harshrana00101@example.com"</code></pre>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary"><i class="bi bi-2-circle me-2"></i>2. Staging & Initial Commit</h6>
+                            <p class="text-muted small mb-2">Stage all files from the root repository and commit them to the <code>main</code> branch.</p>
+                            <pre class="bg-dark text-light p-3 rounded"><code>git add .
+git commit -m "feat: complete experiments with Bootstrap layouts"</code></pre>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary"><i class="bi bi-3-circle me-2"></i>3. Branch Creation & Merging Lifecycle</h6>
+                            <p class="text-muted small mb-2">Create an isolated development branch, apply changes, switch back to <code>main</code>, and merge seamlessly.</p>
+                            <pre class="bg-dark text-light p-3 rounded"><code># 1. Create and switch to new branch
+git checkout -b feature/static-site-deployment
+
+# 2. Make commits on the feature branch
+git add .
+git commit -m "feat(exp-1): add static showcase page for GitHub Pages"
+
+# 3. Switch back to main and merge
+git checkout main
+git merge feature/static-site-deployment</code></pre>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div>
+                            <h6 class="fw-bold text-primary"><i class="bi bi-4-circle me-2"></i>4. Connect Remote & Push</h6>
+                            <p class="text-muted small mb-2">Link local git tracking to your GitHub repository and publish the changes.</p>
+                            <pre class="bg-dark text-light p-3 rounded"><code>git remote add origin https://github.com/Harshrana00101/web-development-experiments.git
+git push -u origin main</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Pages Deployment Guide Sidebar -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h5 class="mb-0 fw-bold"><i class="bi bi-globe me-2"></i>GitHub Pages Steps</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <ol class="list-group list-group-numbered list-group-flush mb-3">
+                            <li class="list-group-item px-0 pb-2">
+                                Push your code to your GitHub repo: <code>web-development-experiments</code>.
+                            </li>
+                            <li class="list-group-item px-0 py-2">
+                                Navigate to <strong>Settings</strong> &gt; <strong>Pages</strong>.
+                            </li>
+                            <li class="list-group-item px-0 py-2">
+                                Under <strong>Source</strong>, choose <strong>Deploy from a branch</strong>.
+                            </li>
+                            <li class="list-group-item px-0 py-2">
+                                Under <strong>Branch</strong>, select <code>main</code> and folder <code>/ (root)</code>.
+                            </li>
+                            <li class="list-group-item px-0 pt-2">
+                                Click <strong>Save</strong>. In 1 minute, your site is hosted live!
+                            </li>
+                        </ol>
+
+                        <div class="alert alert-info py-2 px-3 mb-0 small">
+                            <i class="bi bi-info-circle-fill me-1"></i>
+                            <strong>Expected Live URL:</strong><br>
+                            <code>https://harshrana00101.github.io/web-development-experiments/</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Branch Status Card -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-success text-white py-2">
+                        <small class="fw-bold"><i class="bi bi-shield-check me-1"></i>Verified Local Git State</small>
+                    </div>
+                    <div class="card-body p-3 small text-secondary">
+                        <p class="mb-1"><i class="bi bi-check2 text-success me-2"></i>Git Repo: <strong>Initialized</strong></p>
+                        <p class="mb-1"><i class="bi bi-check2 text-success me-2"></i>Default Branch: <strong>main</strong></p>
+                        <p class="mb-1"><i class="bi bi-check2 text-success me-2"></i>Branch Created: <strong>feature/static-site-deployment</strong></p>
+                        <p class="mb-0"><i class="bi bi-check2 text-success me-2"></i>Branch Status: <strong>Merged into main</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5 text-center">
+        <div class="container">
+            <p class="mb-1">Experiment 1 &bull; Git, Branches & GitHub Pages Hosting</p>
+            <small class="text-white-50">&copy; 2026 Harsh Kumar &bull; B.Tech CSE (Data Science)</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+pre {
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, 'Courier New', Courier, monospace;
+}
